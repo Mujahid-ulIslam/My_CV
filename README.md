@@ -67,7 +67,7 @@ Through this project I gained experience in:
 
 
 
-![CV Website](images/my-cv.png.png)
+![CV Website](images/my-cv.png)
 
 
 ---
