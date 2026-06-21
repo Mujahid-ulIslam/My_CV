@@ -34,16 +34,17 @@ body {
 }
 
 .cv-card {
-    width: 700px;
+    max-width: 900px;
+    width: 100%;
     margin: 30px auto;
     background-color: white;
-
     box-shadow: 0 0 15px lightgray;
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     border-radius: 50%;
 
     display: block;
@@ -142,5 +143,31 @@ img {
 .profile-description {
     
     line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .right-side {
+        padding: 20px;
+    }
+
+    .left-side {
+        min-height: auto;
+    }
+
+    .right-side h1 {
+        font-size: 32px;
+    }
+
 }
 
