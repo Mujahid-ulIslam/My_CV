@@ -102,8 +102,60 @@ img {
 
 
 .experience-item {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.date {
+    font-size: 12px;
+    color: rgb(160, 160, 160);
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+.bullets {
+    margin: 6px 0 0 0;
+    padding-left: 18px;
+    color: rgb(61, 42, 42);
+}
+
+.bullets li {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 3px;
+}
+
+.experience-item.minor {
+    margin-bottom: 10px;
+}
+
+.experience-item.minor .item-header strong {
+    font-size: 14px;
+    color: rgb(104, 99, 99);
+    font-weight: 600;
+}
+
+.experience-item.minor p {
+    font-size: 13px;
+    color: rgb(140, 130, 130);
+}
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .cv-card {
+        box-shadow: none;
+        margin: 0 auto;
+    }
 }
 
 .left-side p {
@@ -112,6 +164,23 @@ img {
     margin-bottom: 20px;
     
     
+}
+
+.tech-skills {
+    font-size: 13.5px;
+    line-height: 1.9;
+    letter-spacing: 0.3px;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(90, 90, 90);
+    word-break: break-all;
+}
+
+.contact-link:hover {
+    color: lightgray;
 }
 
 .sidebar-list li {
@@ -146,11 +215,10 @@ img {
 }
 
 @media (max-width: 768px) {
-
     .container {
         flex-direction: column;
     }
-
+    
     .left-side,
     .right-side {
         width: 100%;
@@ -170,4 +238,3 @@ img {
     }
 
 }
-
